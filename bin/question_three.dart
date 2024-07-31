@@ -1,5 +1,5 @@
 import 'dart:io';
-//import 'question_three.dart';
+import 'question_four.dart';
 import 'ansawers_list.dart';
 
 void question3(){
@@ -11,5 +11,5 @@ void question3(){
         q3 = stdin.readLineSync();
       }
       answers.add(q3);
-      //question2();
+      question4();
 }
