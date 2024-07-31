@@ -2,6 +2,7 @@ import 'gitdef.dart';
 import 'githubdef.dart';
 import 'gitcommands.dart';
 import 'gittruefales.dart';
+import 'githubtf.dart';
 
 void main() {
   int degree = 0;
@@ -26,5 +27,14 @@ void main() {
   print("_________________________________\n");
 
   degree = question4(degree);
+  degree = question5(degree);
+
+  print("_________________________________\n");
   print("Your final score is: $degree");
+
+  if (degree == 5) {
+    print("Congratulations! You have passed the quiz!");
+  } else {
+    print("You have failed the quiz. Please try again.");
+  }
 }

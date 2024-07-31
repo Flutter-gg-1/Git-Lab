@@ -11,8 +11,6 @@ int question4(int degree) {
   print("Git created by apple?\n");
   print("1: ${question4["1"]}");
   print("2: ${question4["2"]}");
-  print("3: ${question4["3"]}");
-  print("4: ${question4["4"]}");
   print("Enter your answer: ");
 
   var userAnswer = stdin.readLineSync();
