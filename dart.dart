@@ -37,10 +37,18 @@ gitHubRepository() {
       'Create Repository: Click the "Create repository" button to finalize.\n'
       '\nYou now have a new GitHub repository ready for use!');
 }
+gitAndGitHub() {
+  print('Git: Created by Linus Torvalds in 2005.\n'
+      'GitHub: Founded by Tom Preston-Werner, Chris Wanstrath, PJ Hyett, and Scott Chacon in 2008.\n'
+      'Linus Torvalds: Known for creating the Linux kernel.\n'
+      'Tom Preston-Werner: Co-founder of GitHub and a prominent figure in the open-source community.\n'
+      'GitHub: Initially started as a platform for hosting Git repositories with added collaboration features.');
+}
 
 void home() {
   gitFeatures();
   gitHubFeatures();
   gitCodes();
   gitHubRepository();
+  gitAndGitHub();
 }
