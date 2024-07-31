@@ -1,14 +1,24 @@
-
 import 'firstfunc.dart';
 
 void main() {
+  print("----Welcom to git quiz----");
+  print("what do you want to know about git and githup");
+  print("1-history of git");
+  print("2-history of githup");
+  print("3-more info about git");
+  print("4-more info about githup");
+
+
+
+
+
+
   firstFunction();
   secondFunction();
   thierdFunction();
   diffrentingit();
   diffrentingithup();
 }
-
 
 secondFunction() {
   print("github tarted at 2017");
