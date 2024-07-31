@@ -10,4 +10,9 @@ void main(List<String> arguments) {
   int min = int.parse(stdin.readLineSync()!);
 
   earn(min, costPerMin);
+
+   print("convert Fahrenheit to Celsius");
+  int fah = int.parse(stdin.readLineSync()!);
+
+  convertFToC(fah);
 }
