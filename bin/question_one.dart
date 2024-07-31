@@ -1,11 +1,8 @@
 import 'dart:io';
 
-import 'question_one.dart';
-
-void function(){
+void question1(){
   print("\n\n\n\n\n");
-  print("< ---- Welcome to Git quiz ---->");
-  print("Lets 'git' started, enter 1 to go to question 1");
+  print("Q1: which of the following is a stage of version tracking \d 1)- Untracked \d 2) Staged \d 3) Committed \d 4)All of the above");
   String? goToQ1 = stdin.readLineSync();
       while(goToQ1!='1'){
         print("Please try again");
