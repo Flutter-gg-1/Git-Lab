@@ -11,8 +11,13 @@ void main(List<String> arguments) {
 
   earn(min, costPerMin);
 
-   print("convert Fahrenheit to Celsius");
+  print("convert Fahrenheit to Celsius");
   int fah = int.parse(stdin.readLineSync()!);
 
   convertFToC(fah);
+
+  print("calculate volume of cube");
+  int leangth = int.parse(stdin.readLineSync()!);
+
+  volumeOfCube(leangth);
 }
