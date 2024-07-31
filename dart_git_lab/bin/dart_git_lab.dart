@@ -18,7 +18,7 @@ void main(List<String> arguments) {
 
 class Instructions {
   static String func1() => 'Git is amazing!';
-  // static String func2() => 'I add my files to "Staging" using git add.';
+  static String func2() => 'I add my files to "Staging" using git add.';
   // static String func3() => 'I commit my changes using git commit';
   // static String func4() => 'I check my working directory for untracked changes using git status';
   // static String func5() => 'I push my files to the server using git push';
@@ -44,7 +44,7 @@ class Instructions {
       case '0':
         print(func1());
       case '1':
-      // print(func2());
+        print(func2());
       case '2':
       // print(func3());
       case '3':
