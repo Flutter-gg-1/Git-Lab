@@ -3,6 +3,7 @@ import 'dart:io';         // library to interact with user
 import 'questions.dart';  // questions
 import 'play_again.dart'; // function to ask user for restart
 
+// function to start the quiz
 void play({required String name}) {
   // initialize score
   int score = 0;
@@ -16,8 +17,7 @@ void play({required String name}) {
 
   for (int i = 0; i < questionsList.length; i++) {
     // show question
-    print('Q${i + 1} : ${questionsList[i]}');
-    print('-' * 30);
+    print('Q${i + 1} : ${questionsList[i]}\n');
 
     // get answers
     List answers = questions[questionsList[i]]!['answers'];
@@ -53,6 +53,7 @@ void play({required String name}) {
     ans - 1 == answers.indexOf(correct)
         ? print("Correct ✅\nYour score now is ${++score}")
         : print('Wrong ❌');
+    print('-' * 30);
   }
   // show score and ask user to play again
   playAgain(name: name, score: score);

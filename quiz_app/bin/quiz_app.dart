@@ -4,14 +4,13 @@ import 'menu.dart'; // function to display menu
 import 'play.dart'; // function to start the quiz
 
 void main() {
-  print("---> Welcome to quiz app !! <---");
   while_quiz:
   while (true) {
     String choice = menu();
     switch (choice) {
       // EXIT
       case '0':
-        print("Bye bye .......");
+        print("Bye bye 🖐️ .....");
         break while_quiz;
 
       // play
@@ -26,6 +25,7 @@ void main() {
           stdout.write('Please enter your name : ');
           name = stdin.readLineSync();
         }
+        print('-'*30);
         play(name: name);
         break while_quiz;
 
