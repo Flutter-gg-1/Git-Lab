@@ -3,6 +3,7 @@ void main() {
   printDartInfo();
   info();
   infoAboutCvcsAndDvcs();
+  printOOPInfo();
 }
 
 printinfo() {
@@ -40,4 +41,20 @@ infoAboutCvcsAndDvcs() {
       "- Decentralized workflow: changes committed locally, then pushed to remote.");
   print(
       "- Advantages: faster performance, better offline work, increased reliability, more flexible workflows.");
+}
+
+printOOPInfo() {
+  print(
+      "OOP is a programming paradigm based on objects, combining data (properties) and behavior (methods).");
+  print(
+      "Dart is an object-oriented language, supporting classes, objects, inheritance, polymorphism, and encapsulation.");
+  print(
+      "Classes are blueprints for creating objects, defining their properties and methods.");
+  print("Objects are instances of classes, representing real-world entities.");
+  print(
+      "Inheritance allows creating new classes based on existing ones, promoting code reuse.");
+  print(
+      "Polymorphism enables objects of different types to be treated as if they were of the same type.");
+  print(
+      "Encapsulation hides implementation details, protecting data integrity and improving code modularity.");
 }
