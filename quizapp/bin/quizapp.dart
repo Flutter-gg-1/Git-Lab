@@ -1,37 +1,34 @@
 import 'git.dart';
 import 'dart:io';
-import 'github.dart';
-import 'git_commands.dart';
-import 'github_commands.dart';
-import 'difference.dart';
 import 'exit.dart';
 
 void main(List<String> arguments) {
   bool flag = false;
   do {
-    print("-----Hi-----");
-    print("0: what is git");
-    print("1: what is a github");
-    print("2: what is the most commands in git");
-    print("3: what is the most commands in githb");
-    print("4: what is the difference between git and github");
-    print("5: exit");
+    print("\n\n\n");
+    print("-----please choose a question-----");
+    print("1: What is git?");
+    print("2: What is a github?");
+    print("3: Does git store a seperate copy of every file in every commit?");
+    print("4: What is the command line of initilizing git?");
+    print("5: What is the command line ofor pushing changes to remote repository?");
+    print("6: exit");
     print("---------------------------------------");
 
     int input = int.parse(stdin.readLineSync()!);
 
     switch (input) {
-      case 0:
-        git();
       case 1:
-        github();
+        git();
       case 2:
-        gitCommands();
+        
       case 3:
-        githubCommands();
+        
       case 4:
-        difference();
+        
       case 5:
+        
+      case 6:
         flag = quit();
     }
   } while (!flag);
