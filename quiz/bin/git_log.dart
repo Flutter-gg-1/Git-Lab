@@ -1,3 +1,4 @@
-gitLog(){
-  print("List commits that are reachable by following the parent links from the given commit(s)");
+import 'dart:io';
+gitLog() {
+  
 }

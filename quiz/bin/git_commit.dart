@@ -1,4 +1,4 @@
-gitStatus (){
-  print(" git commit command :");
-  print(" this command is used for add new commit ");
+import 'dart:io';
+gitCommit() {
+ 
 }
