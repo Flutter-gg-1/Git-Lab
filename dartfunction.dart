@@ -1,5 +1,7 @@
 void main() {
   printinfo();
+  printDartInfo();
+  info();
 }
 
 printinfo() {
@@ -19,4 +21,8 @@ printDartInfo() {
   print(
       'It\'s known for its strong type system, null safety, and hot reload feature.');
   print('Flutter, a popular UI toolkit, is built with Dart.');
+}
+
+info() {
+  print('basic info about me\nname:anas aljuhani\nage:25');
 }
