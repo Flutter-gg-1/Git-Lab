@@ -34,7 +34,7 @@ void play({required String name}) {
     print('3- ${answers[2]}');
 
     // get user answer
-    stdout.write('choose answer 1, 2, or 3 : ');
+    stdout.write('\nchoose answer 1, 2, or 3 : ');
     String? answer = stdin.readLineSync();
 
     // validation
