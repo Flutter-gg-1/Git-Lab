@@ -1,6 +1,6 @@
 void main() {
   myknowledge1();
-  myknowledge1();
+  myknowledge2();
 }
 
 myknowledge1() {
