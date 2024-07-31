@@ -7,13 +7,17 @@ gitpush() {
 }
 
 gitclone() {
-  print("to push comannd use git clone");
+  print("to clone comannd use git clone");
 }
 
 gitTrack() {
-  print("to push comannd use git init");
+  print("to track comannd use git init");
 }
 
 gitstat() {
-  print("to push comannd use git status");
+  print("to see status comannd use git status");
+}
+
+gitlog() {
+  print("to show log comannd use git log");
 }
