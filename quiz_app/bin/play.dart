@@ -1,5 +1,7 @@
+// imports
 import 'dart:io';         // library to interact with user
 import 'questions.dart';  // questions
+import 'play_again.dart'; // function to ask user for restart
 
 void play({required String name}) {
   // initialize score
@@ -10,6 +12,8 @@ void play({required String name}) {
   questionsList.shuffle();
 
   // quiz starts !!
+  print("⚔️  Hello $name, Get Ready ⚔️");
+
   for (int i = 0; i < questionsList.length; i++) {
     // show question
     print('Q${i + 1} : ${questionsList[i]}');
@@ -36,8 +40,7 @@ void play({required String name}) {
     // validation
     while (answer!.isEmpty ||
         int.tryParse(answer) == null ||
-        (int.tryParse(answer) != null &&
-            ![1, 2, 3].contains(int.parse(answer)))) {
+        (int.tryParse(answer) != null && ![1, 2, 3].contains(int.parse(answer)))) {
       print("Invalid answer !!");
       stdout.write('Please choose an answer 1, 2, or 3 : ');
       answer = stdin.readLineSync();
@@ -48,7 +51,9 @@ void play({required String name}) {
     
     // check answer by comparing it with the index of the correct answer
     ans - 1 == answers.indexOf(correct)
-        ? print("Correct !!\nYour score now is ${++score}")
-        : print('Wrong.... ');
+        ? print("Correct ✅\nYour score now is ${++score}")
+        : print('Wrong ❌');
   }
+  // show score and ask user to play again
+  playAgain(name: name, score: score);
 }
