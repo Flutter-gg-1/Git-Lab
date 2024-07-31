@@ -1,7 +1,7 @@
 import 'dart:io';
 
-firstQuestion({required int counter}) {
-  print(" GitHub is a web-based Git repository hosting service ?");
+fifthQuestion({required int counter}) {
+  print(" git add . adds / stages all of the files in the current directory ?");
   String? answer1 = stdin.readLineSync();
   if (answer1 == "true") {
     print(" right answer ");
