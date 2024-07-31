@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main(List<String> arguments) {
+  List numbers = [1, 2, 3, 4, 5, 6];
   print(
       "\n \n -------- What is the first satage in git, choose the right answer:");
   print("a. untrackes ");
@@ -13,6 +14,8 @@ void main(List<String> arguments) {
   print("\n \n -------- add commands you know in git:");
   String answer2 = stdin.readLineSync()!;
   print(quiz(answer: answer2));
+
+  print(addEven(numbers: numbers));
 }
 
 //function 1
@@ -33,7 +36,7 @@ quiz({required String answer}) {
   return answer;
 }
 
-//function
+//function 2
 
 addGitCommands({required String commands}) {
   List gitcommands = [];
@@ -41,4 +44,17 @@ addGitCommands({required String commands}) {
   gitcommands.add(commands);
 
   return gitcommands;
+}
+
+//function 3
+
+int addEven({required List numbers}) {
+  int count = 0;
+
+  for (int element in numbers) {
+    if (element % 2 == 0) {
+      count += element;
+    }
+  }
+  return count;
 }
