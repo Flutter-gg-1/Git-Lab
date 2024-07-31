@@ -1,7 +1,7 @@
-Map<String, Map> quiz = {
+Map<String, Map> questions = {
   'What is git ?': {
     'answers': [
-      'Version Control System ',
+      'Version Control System',
       'Nickname for github',
       'Programming language'
     ],
