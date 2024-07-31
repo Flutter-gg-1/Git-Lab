@@ -28,6 +28,13 @@ void main(List<String> arguments) {
 
   //4
   print(addEven(numbers: numbers));
+
+  //5
+  print(" \n \n -------- add length:");
+  int length = int.parse(stdin.readLineSync()!);
+  print(" \n -------- add width:");
+  int width = int.parse(stdin.readLineSync()!);
+  print(calculateArea(length: length, width: width));
 }
 
 //function 1
@@ -76,4 +83,10 @@ int addEven({required List numbers}) {
     }
   }
   return count;
+}
+
+//function 5
+int calculateArea({required int length, required int width}) {
+  int area = length * width;
+  return area;
 }
