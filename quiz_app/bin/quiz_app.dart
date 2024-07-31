@@ -1,7 +1,7 @@
-import 'dart:io';
 import 'gitdef.dart';
 import 'githubdef.dart';
 import 'gitcommands.dart';
+import 'gittruefales.dart';
 
 void main() {
   int degree = 0;
@@ -21,5 +21,10 @@ void main() {
   degree = question3(degree);
 
   print("_________________________________\n");
+
+  print("Question 2: True or False");
+  print("_________________________________\n");
+
+  degree = question4(degree);
   print("Your final score is: $degree");
 }

@@ -1,6 +1,6 @@
 import 'dart:io';
 
-// This function is used to ask the second question
+// This function is used to ask the three question
 int question3(int degree) {
   Map<String, dynamic> question3 = {
     "1": "git add, git commit, git push",
