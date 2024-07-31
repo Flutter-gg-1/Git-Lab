@@ -1,5 +1,13 @@
-import 'package:gitpro/gitpro.dart' as gitpro;
+void main(List<String> args) {
+  manAge("muhannad", 27);
+  gitpush();
+}
 
-void main(List<String> arguments) {
-  print('Hello world: ${gitpro.calculate()}!');
+//function read the man name and age then print it
+manAge(String man, int age) {
+  print("man :$man age : $age");
+}
+
+gitpush() {
+  print("to push comannd use git push");
 }
