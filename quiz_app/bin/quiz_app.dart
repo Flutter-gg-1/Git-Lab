@@ -1,42 +1,15 @@
-import "dart:io";
-import "git.dart";
-import 'github.dart';
-import 'urdev.dart';
+import 'gitdef.dart';
 
 void main() {
-  bool isExit = false;
-  print("Hello ");
-  print("Enter a number to explore the git and github:");
-  print("1: Exploring Git");
-  print("2: Exploring GitHub");
-  print("3: You are a developer");
-  print("4: Git and GitHub account");
-  print("5: Basics commands");
-  print("6: Exit");
-  int number = int.parse(stdin.readLineSync()!);
-  print("You entered: $number");
-  do {
-    switch (number) {
-      case 1:
-        gitExplore();
-        break;
-      case 2:
-        github();
-        break;
-      case 3:
-        urDev();
-        break;
-      case 4:
-        break;
-      case 5:
-        break;
-      case 6:
-        print("Exiting...");
-        print("Goodbye");
-        isExit = true;
-        break;
-      default:
-        print("Invalid number");
-    }
-  } while (isExit);
+  print("_________________________________\n");
+  print("Quiz: Git and GitHub Quiz");
+  print("Date: ${DateTime.now()}\n");
+  print("_________________________________\n");
+  print("                            Welcome to the Git and GitHub quiz\n");
+  print("This quiz will help you understand Git and GitHub");
+  print("Good luck!\n\n\n");
+  print("Question 1: Multiple Choice");
+  print("_________________________________\n");
+  print("What is Git?\n");
+  question1(0);
 }
