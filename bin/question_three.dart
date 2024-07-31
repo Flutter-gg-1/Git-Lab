@@ -1,13 +1,15 @@
 import 'dart:io';
-import 'question_three.dart';
+//import 'question_three.dart';
+import 'ansawers_list.dart';
 
 void question3(){
   print("\n\n\n\n\n");
-  print("Q1: which of the following is a stage of version tracking \d 1)- Untracked \d 2) Staged \d 3) Committed \d 4)All of the above");
-  String? q1 = stdin.readLineSync();
-      while(q1!='1' || q1!='2' || q1!='3' || q1!='4'){
+  print("Q3: To commit a progress we use the command \d 1)- git add . \d 2) git commit -b '' \d 3) git commit -m '' \d 4)commit");
+  String? q3 = stdin.readLineSync();
+      while(q3!='1' || q3!='2' || q3!='3' || q3!='4'){
         print("Please enter a valid choice");
-        q1 = stdin.readLineSync();
+        q3 = stdin.readLineSync();
       }
-      question2();
+      answers.add(q3);
+      //question2();
 }
