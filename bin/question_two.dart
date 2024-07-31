@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'question_three.dart';
+import 'ansawers_list.dart';
 
-void question2(String q1){
+void question2(){
   print("\n\n\n\n\n");
   print("Q2: which of the following is true \d 1)- Git is a web service \d 2) git is released on 2008 \d 3) git is by Microsoft \d 4)Git uses command line");
   String? q2 = stdin.readLineSync();
@@ -9,5 +10,6 @@ void question2(String q1){
         print("Please enter a valid choice");
         q2 = stdin.readLineSync();
       }
-      question2(q2!);
+      answers.add(q2);
+      question3();
 }
