@@ -3,6 +3,7 @@ import 'dart:io';
 import 'exit.dart';
 import 'github.dart';
 import 'trueorfalse.dart';
+import 'git_init.dart';
 
 void main(List<String> arguments) {
   bool flag = false;
@@ -27,7 +28,7 @@ void main(List<String> arguments) {
       case 3:
         trueOrfalse();
       case 4:
-        
+        gitInit();
       case 5:
         
       case 6:
