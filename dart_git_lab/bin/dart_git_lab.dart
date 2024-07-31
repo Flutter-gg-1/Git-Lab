@@ -20,7 +20,8 @@ class Instructions {
   static String func1() => 'Git is amazing!';
   static String func2() => 'I add my files to "Staging" using git add.';
   static String func3() => 'I commit my changes using git commit';
-  // static String func4() => 'I check my working directory for untracked changes using git status';
+  static String func4() =>
+      'I check my working directory for untracked changes using git status';
   // static String func5() => 'I push my files to the server using git push';
   static String func6() => 'ERROR: UNKNOWN COMMAND!';
 
@@ -48,7 +49,7 @@ class Instructions {
       case '2':
         print(func3());
       case '3':
-      // print(func4());
+        print(func4());
       case '4':
       // print(func5());
       default:
