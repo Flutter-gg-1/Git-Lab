@@ -13,3 +13,7 @@ gitclone() {
 gitTrack() {
   print("to push comannd use git init");
 }
+
+gitstat() {
+  print("to push comannd use git status");
+}
