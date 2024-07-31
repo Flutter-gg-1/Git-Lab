@@ -16,3 +16,8 @@ void diceRoll() {
   print(Random().nextInt(5) + 1);
 }
 
+void reveseName(String name) {
+  List<String> charcters = name.split("");
+  String revName = charcters.reversed.join();
+  print(revName);
+}

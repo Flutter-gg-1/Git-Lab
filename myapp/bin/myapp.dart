@@ -22,4 +22,9 @@ void main(List<String> arguments) {
   volumeOfCube(leangth);
 
   diceRoll();
+
+  print("input your name to reverce it");
+  String name = stdin.readLineSync()!;
+
+  reveseName(name);
 }
