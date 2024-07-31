@@ -22,7 +22,7 @@ class Instructions {
   static String func3() => 'I commit my changes using git commit';
   static String func4() =>
       'I check my working directory for untracked changes using git status';
-  // static String func5() => 'I push my files to the server using git push';
+  static String func5() => 'I push my files to the server using git push';
   static String func6() => 'ERROR: UNKNOWN COMMAND!';
 
   static void printInstructions() {
@@ -51,7 +51,7 @@ class Instructions {
       case '3':
         print(func4());
       case '4':
-      // print(func5());
+        print(func5());
       default:
         print(func6());
     }
