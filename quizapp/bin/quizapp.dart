@@ -1,6 +1,7 @@
 import 'git.dart';
 import 'dart:io';
 import 'exit.dart';
+import 'github.dart';
 
 void main(List<String> arguments) {
   bool flag = false;
@@ -21,7 +22,7 @@ void main(List<String> arguments) {
       case 1:
         git();
       case 2:
-        
+        gitHub();
       case 3:
         
       case 4:
