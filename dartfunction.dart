@@ -2,6 +2,7 @@ void main() {
   printinfo();
   printDartInfo();
   info();
+  infoAboutCvcsAndDvcs();
 }
 
 printinfo() {
@@ -25,4 +26,18 @@ printDartInfo() {
 
 info() {
   print('basic info about me\nname:anas aljuhani\nage:25');
+}
+
+infoAboutCvcsAndDvcs() {
+  print("Centralized Version Control (CVCS):");
+  print("- Single central repository for all code.");
+  print(
+      "- Disadvantages: single point of failure, limited offline work, slower for large projects.");
+
+  print("\nDistributed Version Control (DVCS):");
+  print("- Multiple copies of the repository on each developer's machine.");
+  print(
+      "- Decentralized workflow: changes committed locally, then pushed to remote.");
+  print(
+      "- Advantages: faster performance, better offline work, increased reliability, more flexible workflows.");
 }
