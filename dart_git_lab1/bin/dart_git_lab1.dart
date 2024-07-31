@@ -3,6 +3,7 @@ void main() {
   myknowledge2();
   myknowledge3();
   myknowledge4();
+  myknowledge5();
 }
 
 myknowledge1() {
@@ -18,5 +19,10 @@ myknowledge3() {
 }
 
 myknowledge4() {
-  print("How to add your files in git by CMD? :\n (git add .)");
+  print("How to add your files in git by CMD? :\n(git add .)");
+}
+
+myknowledge5() {
+  print(
+      "How to push files in github by CMD? :\ngit push -u origin NAME_OF_BRANCH");
 }
