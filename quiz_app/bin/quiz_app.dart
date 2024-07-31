@@ -1,6 +1,6 @@
 import "dart:io";
 import "git.dart";
-import "github.dart";
+import 'github.dart';
 
 void main() {
   bool isExit = false;
@@ -18,10 +18,9 @@ void main() {
         gitExplore();
         break;
       case 2:
-        githubExplore();
+        github();
         break;
       case 3:
-        print("You are a developer");
         break;
       case 4:
         print("Exiting...");
