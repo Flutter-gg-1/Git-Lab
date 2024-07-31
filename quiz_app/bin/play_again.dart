@@ -1,14 +1,8 @@
 import 'dart:io';           // library to interact with user
 import 'play.dart';         // function to start quiz
-import 'end_message.dart';  // function to print end message
 
 // function to ask user to play again
 void playAgain({required String name, required int score}) {
-  print("The end 🏁");
-  
-  // print suitable message after ending the quiz
-  print(endMessage(name: name, score: score));
-
   // ask user to play again
   print('-'*30);
   print("Play Again ?");
