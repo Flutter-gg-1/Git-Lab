@@ -1,4 +1,4 @@
-import 'package:quiz/quiz.dart' as quiz;
+
 import 'dart:io';
 import 'git_status.dart';
 import 'git_add.dart';
