@@ -21,7 +21,17 @@ gitHubFeatures() {
       "Code Review: Facilitate code review processes with comments and suggestions directly on pull requests.");
 }
 
+gitCodes() {
+  print("Common codes used in Git");
+  print("git clone <repository-url>");
+  print("git status");
+  print("git add <file>");
+  print("git commit -m Commit message");
+  print("git push origin <branch>");
+}
+
 void home() {
   gitFeatures();
   gitHubFeatures();
+  gitCodes();
 }
