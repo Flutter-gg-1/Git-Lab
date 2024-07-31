@@ -1,24 +1,28 @@
 import 'dart:io';
 
-question1(int degree) {
+// This function is used to ask the first question
+int question1(int degree) {
   Map<String, dynamic> question1 = {
-    "a": "A version control system",
-    "b": "A programming language",
-    "c": "A database",
-    "d": "A software development tool"
+    "1": "A version control system",
+    "2": "A programming language",
+    "3": "A database",
+    "4": "A software development tool"
   };
-  var correctAnswer = "a";
-  print("a: ${question1["a"]}");
-  print("b: ${question1["b"]}");
-  print("c: ${question1["c"]}");
-  print("d: ${question1["d"]}");
+  var correctAnswer = "1";
+
+  print("What is Git?\n");
+  print("1: ${question1["1"]}");
+  print("2: ${question1["2"]}");
+  print("3: ${question1["3"]}");
+  print("4: ${question1["4"]}");
   print("Enter your answer: ");
+
   var userAnswer = stdin.readLineSync();
   if (userAnswer == correctAnswer) {
     print("Correct!");
     degree++;
-    print("Your score is: $degree");
   } else {
     print("Incorrect! The correct answer is: ${question1[correctAnswer]}");
   }
+  return degree;
 }
