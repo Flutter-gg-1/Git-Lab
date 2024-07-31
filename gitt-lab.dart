@@ -1,0 +1,40 @@
+import 'firstfunc.dart';
+
+void main() {
+  print("----Welcom to git quiz----");
+  print("what do you want to know about git and githup");
+  print("1-history of git");
+  print("2-history of githup");
+  print("3-more info about git");
+  print("4-more info about githup");
+
+
+
+
+
+
+  firstFunction();
+  secondFunction();
+  thierdFunction();
+  diffrentingit();
+  diffrentingithup();
+}
+
+secondFunction() {
+  print("github tarted at 2017");
+}
+
+thierdFunction() {
+  print(
+      "Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.");
+}
+
+diffrentingit() {
+  print("Git is a software.");
+  print("Git is a command-line tool");
+}
+
+diffrentingithup() {
+  print("GitHub is a service.");
+  print("GitHub is a graphical user interface");
+}
