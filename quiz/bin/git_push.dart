@@ -1,0 +1,15 @@
+import 'dart:io';
+
+gitPush() {
+  print(" git push command :");
+  print("true or false: 0 for true, 1 for false");
+  print(
+      "git push is use to Updates remote refs using local refs, while sending objects necessary to complete the given refs?");
+  print("Enter your choice:");
+  String? choice = stdin.readLineSync();
+  if (choice == "0") {
+    print("you choice is true");
+  } else {
+    print("you choice is false");
+  }
+}
