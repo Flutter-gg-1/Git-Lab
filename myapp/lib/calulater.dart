@@ -11,3 +11,8 @@ void convertFToC(int f) {
 void volumeOfCube(int edgeLength) {
   print(pow(edgeLength, 3));
 }
+
+void diceRoll() {
+  print(Random().nextInt(5) + 1);
+}
+

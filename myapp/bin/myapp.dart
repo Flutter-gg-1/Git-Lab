@@ -20,4 +20,6 @@ void main(List<String> arguments) {
   int leangth = int.parse(stdin.readLineSync()!);
 
   volumeOfCube(leangth);
+
+  diceRoll();
 }
