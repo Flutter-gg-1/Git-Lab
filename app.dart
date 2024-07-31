@@ -1,0 +1,3 @@
+newgit() {
+  return true;
+}
