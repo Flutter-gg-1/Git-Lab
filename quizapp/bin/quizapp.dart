@@ -4,7 +4,7 @@ import 'exit.dart';
 import 'github.dart';
 import 'trueorfalse.dart';
 import 'git_init.dart';
-
+import 'git_push.dart';
 void main(List<String> arguments) {
   bool flag = false;
   do {
@@ -14,7 +14,7 @@ void main(List<String> arguments) {
     print("2: What is a github?");
     print("3: Does git store a seperate copy of every file in every commit?");
     print("4: What is the command line of initilizing git?");
-    print("5: What is the command line ofor pushing changes to remote repository?");
+    print("5: What is the command line for pushing changes to remote repository?");
     print("6: exit");
     print("---------------------------------------");
 
@@ -30,7 +30,7 @@ void main(List<String> arguments) {
       case 4:
         gitInit();
       case 5:
-        
+        gitPush();
       case 6:
         flag = quit();
     }
