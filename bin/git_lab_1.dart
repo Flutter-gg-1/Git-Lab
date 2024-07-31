@@ -1,10 +1,11 @@
-import './functions/menu_display.dart';
 import 'dart:io';
+import './functions/menu_display.dart';
+import './functions/addition.dart';
+import './utility/print_with_color.dart';
 
 // Here we go :)
 void main() {
-
-  do{
+  do {
     // To show my menu options
     displayMenu();
 
@@ -17,7 +18,15 @@ void main() {
     // Switch case to handle user input
     switch (input) {
       case '1':
-        print('Addition');
+        // Write a message in CLI to get user input
+        stdout.write('Write the first number: ');
+        final number1 = double.parse(stdin.readLineSync()!);
+
+        stdout.write('Write the scound number: ');
+        final number2 = double.parse(stdin.readLineSync()!);
+
+        // Call addition function
+        addition(num1: number1, num2: number2);
         break;
       case '2':
         print('Subtraction');
@@ -35,7 +44,14 @@ void main() {
         print('Exit');
         break;
       default:
-        print('Invalid option');
+        /*
+        *
+        * In this case, we will save the data to a JSON file before exiting
+        *
+        * */
+        printWithColor(text: 'Data was saved 😍', color: 'green');
+        printWithColor(text: 'Exiting... see you again 🌹', color: 'Cyan');
+        return;
     }
-  }while(true);
+  } while (true);
 }

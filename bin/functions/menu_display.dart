@@ -15,5 +15,5 @@ void displayMenu() {
   printWithColor(text: '5.Modulus', color: 'Blue');
 
   // Print with yellow color
-  printWithColor(text: '7. Exit');
+  printWithColor(text: '6. Exit');
 }
