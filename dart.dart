@@ -29,9 +29,18 @@ gitCodes() {
   print("git commit -m Commit message");
   print("git push origin <branch>");
 }
+gitHubRepository() {
+  print('Sign In: Log in to your GitHub account at github.com.\n'
+      'New Repository: Click the "+" icon in the upper-right corner and select "New repository."\n'
+      'Repository Details: Fill in the repository name, description (optional), and choose visibility (public or private).\n'
+      'Initialize Repository: Optionally, you can choose to initialize the repository with a README, .gitignore, or license.\n'
+      'Create Repository: Click the "Create repository" button to finalize.\n'
+      '\nYou now have a new GitHub repository ready for use!');
+}
 
 void home() {
   gitFeatures();
   gitHubFeatures();
   gitCodes();
+  gitHubRepository();
 }
