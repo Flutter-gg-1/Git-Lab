@@ -23,3 +23,9 @@ githubTeamWork(){
 
   print("github can be used to work with you team and mange the code");
 }
+
+
+branch(){
+
+  print("Branch is used to git copy of the code that will not afrct the main branch");
+}
