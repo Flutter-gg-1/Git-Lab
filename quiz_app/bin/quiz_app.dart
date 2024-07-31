@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'gitdef.dart';
 import 'githubdef.dart';
+import 'gitcommands.dart';
 
 void main() {
   int degree = 0;
@@ -17,6 +18,7 @@ void main() {
 
   degree = question1(degree);
   degree = question2(degree);
+  degree = question3(degree);
 
   print("_________________________________\n");
   print("Your final score is: $degree");
