@@ -1,5 +1,4 @@
 // imports
-import 'dart:io'; // library to interact with user
 import 'menu.dart'; // function to display menu
 
 void main() {
