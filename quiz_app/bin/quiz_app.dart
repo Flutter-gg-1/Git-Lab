@@ -10,7 +10,9 @@ void main() {
   print("1: Exploring Git");
   print("2: Exploring GitHub");
   print("3: You are a developer");
-  print("4: Exit");
+  print("4: Git and GitHub account");
+  print("5: Basics commands");
+  print("6: Exit");
   int number = int.parse(stdin.readLineSync()!);
   print("You entered: $number");
   do {
@@ -25,6 +27,10 @@ void main() {
         urDev();
         break;
       case 4:
+        break;
+      case 5:
+        break;
+      case 6:
         print("Exiting...");
         print("Goodbye");
         isExit = true;
