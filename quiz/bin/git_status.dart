@@ -8,8 +8,8 @@ gitStatus() {
   print("Enter your choice:");
   String? choice = stdin.readLineSync();
   if (choice == "1") {
-    print("true");
+    print("you choice is true");
   } else {
-    print("false");
+    print("you choice is false");
   }
 }

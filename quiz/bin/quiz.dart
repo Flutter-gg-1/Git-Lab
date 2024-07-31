@@ -12,13 +12,13 @@ void main(List<String> arguments) {
   do{
   print("\n\n\n");
   print("git and github command quiz:");
-  print("\n");
+  print("----------------------------");
   print(" 0: git status");
   print(" 1: git add");
   print(" 2: git commit");
   print(" 3: git push");
   print(" 4: git log");
-  print("Q: for exit");
+  print(" Q: for exit");
   print("Enter your choice:");
   String? choice = stdin.readLineSync();
   switch (choice) {
