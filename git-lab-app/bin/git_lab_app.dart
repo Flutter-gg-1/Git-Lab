@@ -4,18 +4,18 @@ import 'dart:io';
 void main(List<String> arguments) {
   bool isExit = false;
 
-  do {
-    print('enter a git keyword to check: ');
-    String keyword = stdin.readLineSync()!;
+  print('enter a git keyword to check: ');
+  String keyword = stdin.readLineSync()!;
 
-    checkKeyword(keyword);
+  checkKeyword(keyword);
 
-    print('\n');
-    getGitStages();
+  print('\n');
+  getGitStages();
 
-    
-    
-  } while (!isExit);
+  answerQuestion();
+
+  howToDeleteBranch();
+  howToResetBranch();
 }
 
 checkKeyword(String command) {
@@ -53,4 +53,12 @@ answerQuestion() {
   } else {
     print('Wrong Answer, correct answer is $correct');
   }
+}
+
+howToDeleteBranch() {
+  print('git branch --delete <branch_name>');
+}
+
+howToResetBranch() {
+  print('git reset --hard Head~1');
 }
