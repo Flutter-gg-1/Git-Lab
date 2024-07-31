@@ -1,5 +1,6 @@
-import 'package:lab/lab.dart' as lab;
-
+import 'menu.dart';
 void main(List<String> arguments) {
-  print('Hello world: ${lab.calculate()}!');
+while (true) {
+  menu();
+}
 }
