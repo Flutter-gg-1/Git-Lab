@@ -10,5 +10,10 @@ void main(){
 
 
 gitinfo(){
-  print("is it version control");
+  print("git is it version control");
+}
+
+
+github(){
+  print("github is website to store your code");
 }
