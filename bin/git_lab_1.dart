@@ -2,6 +2,7 @@ import 'dart:io';
 import './functions/menu_display.dart';
 import './functions/addition.dart';
 import './functions/subtraction.dart';
+import './functions/multiplication.dart';
 import './utility/print_with_color.dart';
 
 /*
@@ -52,7 +53,7 @@ void main() {
         subtraction(num1: getUserInput()[0], num2: getUserInput()[1]);
         break;
       case '3':
-        print('Multiplication');
+        multiplication(num1: getUserInput()[0], num2: getUserInput()[1]);
         break;
       case '4':
         print('Division');
