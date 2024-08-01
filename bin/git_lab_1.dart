@@ -1,6 +1,7 @@
 import 'dart:io';
 import './functions/menu_display.dart';
 import './functions/addition.dart';
+import './functions/subtraction.dart';
 import './utility/print_with_color.dart';
 
 /*
@@ -47,7 +48,8 @@ void main() {
         addition(num1: getUserInput()[0], num2: getUserInput()[1]);
         break;
       case '2':
-        print('Subtraction');
+        // Call subtraction function
+        subtraction(num1: getUserInput()[0], num2: getUserInput()[1]);
         break;
       case '3':
         print('Multiplication');
