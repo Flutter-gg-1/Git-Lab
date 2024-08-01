@@ -12,8 +12,7 @@ void displayMenu() {
   printWithColor(text: '2.Subtraction', color: 'Blue');
   printWithColor(text: '3.Multiplication', color: 'Blue');
   printWithColor(text: '4.Division', color: 'Blue');
-  printWithColor(text: '5.Modulus', color: 'Blue');
 
   // Print with yellow color
-  printWithColor(text: '6. Exit');
+  printWithColor(text: '5. Exit');
 }

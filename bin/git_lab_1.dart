@@ -1,8 +1,10 @@
+import 'dart:ffi';
 import 'dart:io';
 import './functions/menu_display.dart';
 import './functions/addition.dart';
 import './functions/subtraction.dart';
 import './functions/multiplication.dart';
+import './functions/division.dart';
 import './utility/print_with_color.dart';
 
 /*
@@ -45,34 +47,49 @@ void main() {
     // Switch case to handle user input
     switch (input) {
       case '1':
+        /*
+        * Addition operation
+        * */
+        List<double> userInputs = getUserInput();
         // Call addition function
-        addition(num1: getUserInput()[0], num2: getUserInput()[1]);
+        addition(num1: userInputs[0], num2: userInputs[1]);
         break;
       case '2':
-        // Call subtraction function
-        subtraction(num1: getUserInput()[0], num2: getUserInput()[1]);
+        /*
+        * Subtraction operation
+        * */
+        List<double> userInputs = getUserInput();
+        // Call subtraction function to get result
+        subtraction(num1: userInputs[0], num2: userInputs[1]);
         break;
       case '3':
-        multiplication(num1: getUserInput()[0], num2: getUserInput()[1]);
+        /*
+        * Multiplication operation
+        * */
+        List<double> userInputs = getUserInput();
+        // Call multiplication function to get result
+        multiplication(num1: userInputs[0], num2: userInputs[1]);
         break;
       case '4':
-        print('Division');
+        /*
+        * Division operation
+        * */
+        List<double> userInputs = getUserInput();
+        // Call addition function
+        division(num1: userInputs[0], num2: userInputs[1]);
         break;
       case '5':
-        print('Modulus');
-        break;
-      case '6':
-        print('Exit');
-        break;
-      default:
         /*
         *
-        * In this case, we will save the data to a JSON file before exiting
+        * Exit
         *
         * */
-        printWithColor(text: 'Data was saved 😍', color: 'green');
         printWithColor(text: 'Exiting... see you again 🌹', color: 'Cyan');
         return;
+
+      default:
+        printWithColor(text: "Invalid input, please try again.", color: 'Red');
+        break;
     }
   } while (true);
 }
