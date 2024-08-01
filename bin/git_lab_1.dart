@@ -3,6 +3,31 @@ import './functions/menu_display.dart';
 import './functions/addition.dart';
 import './utility/print_with_color.dart';
 
+/*
+*
+* Function to print a message to user and take his inputs
+* It will return a List with 2 double
+* [0] = number 1
+* [1] = number 2
+* */
+List<double> getUserInput() {
+  // Init the list
+  List<double> numbers = [];
+
+  // Write a message in CLI then save his inputs
+  stdout.write('Write the first number: ');
+  final number1 = double.parse(stdin.readLineSync()!);
+  stdout.write('Write the second number: ');
+  final number2 = double.parse(stdin.readLineSync()!);
+
+  // Add it to the list
+  numbers.add(number1);
+  numbers.add(number2);
+
+  // Return the list
+  return numbers;
+}
+
 // Here we go :)
 void main() {
   do {
@@ -18,15 +43,8 @@ void main() {
     // Switch case to handle user input
     switch (input) {
       case '1':
-        // Write a message in CLI to get user input
-        stdout.write('Write the first number: ');
-        final number1 = double.parse(stdin.readLineSync()!);
-
-        stdout.write('Write the scound number: ');
-        final number2 = double.parse(stdin.readLineSync()!);
-
         // Call addition function
-        addition(num1: number1, num2: number2);
+        addition(num1: getUserInput()[0], num2: getUserInput()[1]);
         break;
       case '2':
         print('Subtraction');
